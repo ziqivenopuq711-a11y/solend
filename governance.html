@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Governance</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Decentralized Governance</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Solend is governed by its community of SLND token holders. Every significant protocol decision — from risk parameter adjustments and new asset listings to treasury allocations and strategic partnerships — is decided through transparent, on-chain governance votes. No single entity controls Solend; the community collectively owns and steers the protocol's future.
+        </p>
+        <div class="flex gap-4 justify-center mt-8">
+          <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">View Proposals</a>
+          <a href="#" class="border border-gray-700 hover:border-purple-500 text-gray-300 hover:text-white font-semibold px-6 py-3 rounded-lg transition-colors">Join Forum</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLND Voting -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">SLND Voting Power</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Governance on Solend follows a simple and transparent model: 1 SLND = 1 vote. Any wallet holding SLND can participate in governance votes directly, or delegate their voting power to another wallet — such as a trusted community member, a protocol that holds SLND, or a governance specialist who actively researches proposals.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">For a proposal to pass, it must meet a minimum quorum of 1,000,000 SLND tokens participating in the vote. This threshold ensures that major protocol changes reflect broad community consensus rather than a small group of voters. The quorum threshold itself can be changed through governance with sufficient community support.</p>
+            <p class="text-gray-400 leading-relaxed">The standard voting period is 3 days (72 hours), giving the community adequate time to review, discuss, and vote on proposals. After a proposal passes, a 2-day timelock delay is enforced before execution, allowing time for users to act if they disagree with the outcome — for example, withdrawing funds before a contentious parameter change takes effect.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+              <p class="text-3xl font-bold text-purple-400 mb-2">1:1</p>
+              <p class="text-gray-300 text-sm">SLND to Vote ratio</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+              <p class="text-3xl font-bold text-purple-400 mb-2">1M</p>
+              <p class="text-gray-300 text-sm">Minimum quorum</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+              <p class="text-3xl font-bold text-purple-400 mb-2">3 days</p>
+              <p class="text-gray-300 text-sm">Voting period</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+              <p class="text-3xl font-bold text-purple-400 mb-2">2 days</p>
+              <p class="text-gray-300 text-sm">Timelock delay</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center col-span-2">
+              <p class="text-3xl font-bold text-purple-400 mb-2">78+</p>
+              <p class="text-gray-300 text-sm">Proposals passed to date</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proposal Process -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Proposal Process</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend uses a staged governance process that ensures community input at every step, from initial idea to on-chain execution. Anyone can start this process — no minimum SLND holding is required to discuss or submit a temperature check.</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 relative">
+            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mb-5">1</div>
+            <h3 class="text-white font-bold text-lg mb-3">Temperature Check</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Post your idea in the #governance channel on Discord. Gather informal feedback from community members to gauge interest and refine the concept before investing time in a full proposal write-up. This stage is casual and exploratory — no formal structure required.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 relative">
+            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mb-5">2</div>
+            <h3 class="text-white font-bold text-lg mb-3">Forum Discussion</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Create a structured post on the Solend governance forum with a full proposal specification: motivation, technical details, risk analysis, and expected outcomes. The forum post should remain open for at least 5 days for thorough community discussion and revision before proceeding to an on-chain vote.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 relative">
+            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mb-5">3</div>
+            <h3 class="text-white font-bold text-lg mb-3">On-Chain Vote</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Submit the proposal on-chain using Solend's governance contract. Any wallet holding at least 100,000 SLND can submit a proposal. The voting period lasts 3 days. Votes are final and verifiable on-chain. The proposal passes if quorum is reached and the majority votes in favor.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 relative">
+            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mb-5">4</div>
+            <h3 class="text-white font-bold text-lg mb-3">Timelock Execution</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">After passing, the proposal enters a 2-day timelock queue managed by the governance multisig. During this window, the community can review the exact transactions to be executed. After the timelock expires, any holder can trigger execution. Emergency pause can halt execution if a critical flaw is discovered.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAO Structure -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">DAO Structure &amp; Treasury</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">The Solend DAO is the collective body of SLND token holders. The DAO controls the community treasury — currently holding approximately 42 million SLND tokens plus USDC and other assets accumulated from protocol fees. All treasury transactions require successful governance proposals to execute.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">A 5-of-9 multisig guards the treasury and acts as the final execution layer for passed proposals. Multisig signers are elected by governance and include core team members, respected community contributors, and ecosystem partners. The multisig can veto a proposal execution only in cases of clear technical errors or security threats, not for political disagreement.</p>
+            <p class="text-gray-400 leading-relaxed">Treasury funds have been deployed to protocol audits, liquidity mining programs, developer grants, ecosystem partnerships, conference sponsorships, and operational costs. The DAO publishes a quarterly treasury report on the governance forum for full transparency.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6">
+              <h4 class="text-white font-semibold mb-3">Treasury Holdings</h4>
+              <div class="space-y-3">
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-400">SLND Tokens</span>
+                  <span class="text-white font-medium">~42,000,000 SLND</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-400">USDC (accumulated fees)</span>
+                  <span class="text-white font-medium">~$3,200,000</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-400">SOL</span>
+                  <span class="text-white font-medium">~18,500 SOL</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-400">Insurance Fund (USDC)</span>
+                  <span class="text-white font-medium">~$1,800,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-6">
+              <h4 class="text-white font-semibold mb-3">Multisig Structure</h4>
+              <p class="text-gray-400 text-sm">5-of-9 multisig. Signers include core contributors, elected community representatives, and ecosystem partners. Signer elections held annually via governance vote.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Governance Forum -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Join the Governance Forum</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-12">The Solend governance forum is the primary venue for structured community discussion. Browse past proposals, contribute to active discussions, and help shape the future of the protocol. The forum is open to all — you don't need SLND to participate in discussions, only to submit on-chain proposals and vote.</p>
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-white font-bold text-lg mb-3">Recent Proposals</h3>
+            <ul class="space-y-3">
+              <li class="text-gray-400 text-sm border-b border-gray-800 pb-3">SIP-78: Add PYUSD as collateral asset — PASSED</li>
+              <li class="text-gray-400 text-sm border-b border-gray-800 pb-3">SIP-77: Increase BONK isolated pool debt ceiling — PASSED</li>
+              <li class="text-gray-400 text-sm border-b border-gray-800 pb-3">SIP-76: Treasury diversification into stSOL — PASSED</li>
+              <li class="text-gray-400 text-sm">SIP-75: Reduce USDT liquidation threshold to 85% — PASSED</li>
+            </ul>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-white font-bold text-lg mb-3">Active Discussions</h3>
+            <ul class="space-y-3">
+              <li class="text-gray-400 text-sm border-b border-gray-800 pb-3">Proposal to add JLP (Jupiter LP token) as isolated collateral</li>
+              <li class="text-gray-400 text-sm border-b border-gray-800 pb-3">Cross-chain expansion: Should Solend deploy on Eclipse?</li>
+              <li class="text-gray-400 text-sm">v2 upgrade: Discussion of new liquidation engine parameters</li>
+            </ul>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-white font-bold text-lg mb-3">Get Involved</h3>
+            <p class="text-gray-400 text-sm mb-4">Participate in governance to help build the most trusted lending protocol in DeFi. Every voice matters — from casual users to protocol researchers.</p>
+            <a href="https://discord.gg/solend" target="_blank" class="block bg-purple-700 hover:bg-purple-600 text-white text-sm font-semibold px-4 py-3 rounded-lg transition-colors text-center">Join Discord</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

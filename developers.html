@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Developer Hub</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Build on Solend</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Solend is an open, permissionless protocol with a comprehensive developer toolkit. Whether you're building a yield aggregator, an automated trading strategy, a lending dashboard, or an entirely new DeFi primitive, Solend's SDK, APIs, and smart contract interfaces make integration fast and reliable. Join the growing ecosystem of builders leveraging Solend as infrastructure.
+        </p>
+        <div class="flex gap-4 justify-center mt-8">
+          <a href="https://docs.solend.fi" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">Read the Docs</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="border border-gray-700 hover:border-purple-500 text-gray-300 hover:text-white font-semibold px-6 py-3 rounded-lg transition-colors">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SDK & Libraries -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">TypeScript / JavaScript</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">SDK &amp; Libraries</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">The official <code class="bg-gray-800 text-purple-300 px-2 py-0.5 rounded text-sm">@solendprotocol/solend-sdk</code> package provides a fully typed TypeScript client for interacting with the Solend protocol. Available on npm, the SDK abstracts all the complexity of constructing Solana transactions, deserializing on-chain account state, and computing derived metrics like APYs and health factors.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">The SDK is actively maintained and versioned with full changelog documentation. It supports both browser and Node.js environments, making it suitable for frontends, backend services, bots, and CLI tooling. All public methods are fully typed with JSDoc documentation for IDE autocomplete support.</p>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-gray-400 text-sm">
+                <span class="text-green-400">✓</span> Full TypeScript types for all protocol structs
+              </div>
+              <div class="flex items-center gap-3 text-gray-400 text-sm">
+                <span class="text-green-400">✓</span> Compute APYs, borrow limits, and health factors
+              </div>
+              <div class="flex items-center gap-3 text-gray-400 text-sm">
+                <span class="text-green-400">✓</span> Build supply, borrow, repay, and withdraw transactions
+              </div>
+              <div class="flex items-center gap-3 text-gray-400 text-sm">
+                <span class="text-green-400">✓</span> Flash loan transaction builder included
+              </div>
+              <div class="flex items-center gap-3 text-gray-400 text-sm">
+                <span class="text-green-400">✓</span> Works with Anchor-compatible wallet adapters
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 font-mono text-sm">
+              <p class="text-gray-500 mb-3"># Install the SDK</p>
+              <p class="text-green-400">npm install @solendprotocol/solend-sdk</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 font-mono text-sm overflow-x-auto">
+              <p class="text-gray-500 mb-3">// Initialize the SDK and fetch reserve data</p>
+              <p class="text-purple-400">import <span class="text-white">&#123; SolendMarket &#125;</span> from <span class="text-green-400">'@solendprotocol/solend-sdk'</span>;</p>
+              <br>
+              <p class="text-purple-400">const <span class="text-white">market</span> = <span class="text-yellow-400">await</span> SolendMarket.initialize(</p>
+              <p class="text-white pl-4">connection,</p>
+              <p class="text-green-400 pl-4">"production"</p>
+              <p class="text-white">);</p>
+              <br>
+              <p class="text-gray-500">// Fetch all reserves</p>
+              <p class="text-purple-400">const <span class="text-white">reserves</span> = <span class="text-yellow-400">await</span> market.fetchReserves();</p>
+              <br>
+              <p class="text-gray-500">// Get USDC supply APY</p>
+              <p class="text-purple-400">const <span class="text-white">usdc</span> = reserves.find(</p>
+              <p class="text-white pl-4">r =&gt; r.config.symbol === <span class="text-green-400">"USDC"</span></p>
+              <p class="text-white">);</p>
+              <p class="text-white">console.log(usdc.supplyAPY); <span class="text-gray-500">// e.g. 0.0618</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- API Reference -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">REST API</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-4">API Reference</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend's public REST API provides read access to all protocol state, historical data, and user positions. No API key required for public endpoints.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-green-900/40 text-green-400 text-xs font-bold px-2.5 py-1 rounded font-mono">GET</span>
+              <code class="text-purple-300 text-sm">/v1/markets</code>
+            </div>
+            <p class="text-gray-400 text-sm">Returns all active lending markets with their configuration, supported assets, TVL, total borrows, and current utilization rates. Updated every block.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-green-900/40 text-green-400 text-xs font-bold px-2.5 py-1 rounded font-mono">GET</span>
+              <code class="text-purple-300 text-sm">/v1/reserves</code>
+            </div>
+            <p class="text-gray-400 text-sm">Fetches detailed reserve data for all supported assets including supply APY, borrow APY, collateral factor, liquidation threshold, and current exchange rate.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-green-900/40 text-green-400 text-xs font-bold px-2.5 py-1 rounded font-mono">GET</span>
+              <code class="text-purple-300 text-sm">/v1/obligations/:wallet</code>
+            </div>
+            <p class="text-gray-400 text-sm">Returns a specific wallet's open lending positions — supplied assets, borrowed assets, health factor, and maximum borrowable amount across all markets.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-green-900/40 text-green-400 text-xs font-bold px-2.5 py-1 rounded font-mono">GET</span>
+              <code class="text-purple-300 text-sm">/v1/rates/history</code>
+            </div>
+            <p class="text-gray-400 text-sm">Historical interest rate data for all reserves, queryable by asset, time range, and granularity (hourly, daily, weekly). Useful for building APY charts and rate analytics.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-green-900/40 text-green-400 text-xs font-bold px-2.5 py-1 rounded font-mono">GET</span>
+              <code class="text-purple-300 text-sm">/v1/liquidations</code>
+            </div>
+            <p class="text-gray-400 text-sm">Lists recent liquidation events with repaid amounts, received collateral, liquidator addresses, and transaction signatures for transparency and analytics.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-green-900/40 text-green-400 text-xs font-bold px-2.5 py-1 rounded font-mono">GET</span>
+              <code class="text-purple-300 text-sm">/v1/stats/tvl</code>
+            </div>
+            <p class="text-gray-400 text-sm">Time-series TVL data for the protocol and individual markets. Supports filtering by asset, market, and date range. Used by DeFiLlama and other analytics aggregators.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smart Contract Integration -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">On-Chain Integration</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Smart Contract CPI Integration</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Solend's lending program supports Cross-Program Invocation (CPI), allowing other Solana programs to call Solend's instructions directly from their own program logic. This enables fully on-chain integrations where your protocol can supply, borrow, repay, and withdraw from Solend atomically within your own transactions.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">The CPI interface is stable and versioned. All Solend instructions are available as CPI entry points, including supply, borrow, repay, withdraw, liquidate, and flash loan. Using Anchor's CPI clients, integration is straightforward and type-safe.</p>
+            <p class="text-gray-400 leading-relaxed">Solend also provides a dedicated CPI crate on crates.io for Rust programs. The crate is updated alongside the main program and provides struct definitions, instruction builders, and helper functions for common integration patterns used by vault protocols and automated strategy programs.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-6 font-mono text-sm overflow-x-auto">
+            <p class="text-gray-500 mb-3">// Rust CPI example — borrow from Solend</p>
+            <p class="text-purple-400">use <span class="text-white">solend_cpi::cpi::borrow_obligation_liquidity;</span></p>
+            <br>
+            <p class="text-purple-400">pub fn <span class="text-yellow-400">my_borrow</span>(</p>
+            <p class="text-white pl-4">ctx: Context&lt;MyBorrow&gt;,</p>
+            <p class="text-white pl-4">amount: u64,</p>
+            <p class="text-white">) -&gt; Result&lt;()&gt; &#123;</p>
+            <p class="text-white pl-4">borrow_obligation_liquidity(</p>
+            <p class="text-white pl-8">CpiContext::new(</p>
+            <p class="text-white pl-12">ctx.accounts.solend_program.to_account_info(),</p>
+            <p class="text-white pl-12">BorrowObligationLiquidity &#123;</p>
+            <p class="text-white pl-16">source_liquidity: ctx.accounts.reserve_liquidity.to_account_info(),</p>
+            <p class="text-white pl-16">destination_liquidity: ctx.accounts.dest.to_account_info(),</p>
+            <p class="text-white pl-16">// ... other accounts</p>
+            <p class="text-white pl-12">&#125;,</p>
+            <p class="text-white pl-8">),</p>
+            <p class="text-white pl-8">amount,</p>
+            <p class="text-white pl-4">)?;</p>
+            <p class="text-white pl-4">Ok(())</p>
+            <p class="text-white">&#125;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Resources -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Developer Resources</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Everything you need to start building on Solend, from documentation and sample code to community support and funding opportunities.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="https://github.com/solendprotocol" target="_blank" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">📦</div>
+            <h3 class="text-white font-bold mb-2">GitHub</h3>
+            <p class="text-gray-400 text-sm">Full open-source codebase including the lending program, SDK, liquidator bots, and frontend code. Star us on GitHub.</p>
+          </a>
+          <a href="https://docs.solend.fi" target="_blank" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">📚</div>
+            <h3 class="text-white font-bold mb-2">Documentation</h3>
+            <p class="text-gray-400 text-sm">Comprehensive protocol documentation covering architecture, API reference, SDK guides, integration tutorials, and risk parameters.</p>
+          </a>
+          <a href="https://discord.gg/solend" target="_blank" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">💬</div>
+            <h3 class="text-white font-bold mb-2">Developer Discord</h3>
+            <p class="text-gray-400 text-sm">Join the #developers channel on the Solend Discord for technical discussions, integration support, and protocol announcements.</p>
+          </a>
+          <a href="https://immunefi.com/bounty/solend/" target="_blank" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">🐛</div>
+            <h3 class="text-white font-bold mb-2">Bug Bounty</h3>
+            <p class="text-gray-400 text-sm">Earn up to $1,000,000 for responsible disclosure of critical vulnerabilities. The Solend bug bounty program is hosted on Immunefi.</p>
+          </a>
+          <a href="#" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">🏗️</div>
+            <h3 class="text-white font-bold mb-2">Grants Program</h3>
+            <p class="text-gray-400 text-sm">The Solend DAO funds projects building on top of the protocol. Apply for a grant to receive SLND tokens and technical support.</p>
+          </a>
+          <a href="#" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">🔧</div>
+            <h3 class="text-white font-bold mb-2">Example Projects</h3>
+            <p class="text-gray-400 text-sm">Sample applications including a liquidation bot, a yield optimizer, and a simple supply/borrow frontend to accelerate your integration.</p>
+          </a>
+          <a href="#" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">🌐</div>
+            <h3 class="text-white font-bold mb-2">Devnet Deployment</h3>
+            <p class="text-gray-400 text-sm">Test your integration on Solana devnet using the Solend devnet deployment. Includes a token faucet for all supported assets.</p>
+          </a>
+          <a href="#" class="bg-gray-900 border border-gray-800 hover:border-purple-700/50 rounded-2xl p-6 transition-colors block">
+            <div class="text-3xl mb-4">📊</div>
+            <h3 class="text-white font-bold mb-2">Analytics</h3>
+            <p class="text-gray-400 text-sm">Real-time protocol dashboards built on Dune Analytics and Flipside Crypto. Fork existing queries or build custom analytics for your integration.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

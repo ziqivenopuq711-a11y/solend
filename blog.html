@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Blog</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Latest from Solend</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Protocol updates, DeFi education, community highlights, and deep dives into the mechanics of decentralized lending on Solana. Stay informed about everything happening at Solend — from governance proposals to major product releases and ecosystem partnerships.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-8">Featured Article</p>
+        <div class="bg-gray-950 border border-purple-700/40 rounded-2xl overflow-hidden">
+          <div class="bg-gradient-to-r from-purple-900/40 to-gray-900 p-12">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="bg-purple-700 text-white text-xs font-semibold px-3 py-1 rounded-full">Protocol Update</span>
+              <span class="text-gray-500 text-sm">November 14, 2024</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Solend V2: A New Era for DeFi Lending</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">After 18 months of development, extensive internal testing, and a comprehensive audit by Trail of Bits, we are thrilled to announce the upcoming launch of Solend V2 — a complete architectural overhaul of the lending protocol that sets the foundation for the next decade of decentralized lending on Solana.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">V2 introduces a new account model that reduces per-transaction compute unit consumption by up to 40%, an upgraded liquidation engine that is more efficient and fairer to borrowers, and a revamped oracle aggregation system with configurable staleness and confidence thresholds per asset. Together, these improvements dramatically enhance both the user experience and the protocol's resilience under adverse market conditions.</p>
+            <p class="text-gray-400 leading-relaxed mb-8">The V2 smart contracts will be deployed via a governance proposal that allows existing users to migrate their positions through an assisted migration flow. No user action is required for the migration — the protocol will handle position migration automatically for all active obligations. Liquidity will be seamlessly transferred from v1 to v2 pools with zero downtime.</p>
+            <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">Read Full Article</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-10">Recent Posts</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-700/50 transition-colors">
+            <div class="bg-gradient-to-br from-blue-900/30 to-gray-900 h-32 flex items-center justify-center">
+              <span class="text-5xl">📊</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-purple-400 text-xs font-semibold">Protocol Update</span>
+                <span class="text-gray-600 text-xs">•</span>
+                <span class="text-gray-500 text-xs">Oct 28, 2024</span>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-3">Q3 2024 Protocol Report</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">A comprehensive look at protocol performance in Q3 2024 — TVL growth, volume metrics, liquidation statistics, top borrower segments, and governance activity. Total fees generated reached $2.1M, representing a 34% increase quarter-over-quarter driven by increased market activity.</p>
+              <a href="#" class="inline-block mt-4 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors">Read More →</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-700/50 transition-colors">
+            <div class="bg-gradient-to-br from-orange-900/30 to-gray-900 h-32 flex items-center justify-center">
+              <span class="text-5xl">🐶</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-purple-400 text-xs font-semibold">New Market</span>
+                <span class="text-gray-600 text-xs">•</span>
+                <span class="text-gray-500 text-xs">Oct 12, 2024</span>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-3">New BONK Isolated Market Launch</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Solend's BONK isolated lending market is now live following a successful governance vote. BONK suppliers can earn competitive yields while BONK holders can borrow USDC against their meme coin bags. The market opened with a conservative $5M debt ceiling, governed by the community risk framework.</p>
+              <a href="#" class="inline-block mt-4 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors">Read More →</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-700/50 transition-colors">
+            <div class="bg-gradient-to-br from-green-900/30 to-gray-900 h-32 flex items-center justify-center">
+              <span class="text-5xl">⚡</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-purple-400 text-xs font-semibold">Education</span>
+                <span class="text-gray-600 text-xs">•</span>
+                <span class="text-gray-500 text-xs">Sep 30, 2024</span>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-3">Understanding Flash Loans on Solend</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">A comprehensive guide to flash loans on Solana — what they are, how they work, and practical use cases including arbitrage, collateral swaps, and self-liquidation. Includes code examples using the Solend SDK and a breakdown of the economics of profitable flash loan strategies in the current market environment.</p>
+              <a href="#" class="inline-block mt-4 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors">Read More →</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-700/50 transition-colors">
+            <div class="bg-gradient-to-br from-purple-900/30 to-gray-900 h-32 flex items-center justify-center">
+              <span class="text-5xl">🗳️</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-purple-400 text-xs font-semibold">Governance</span>
+                <span class="text-gray-600 text-xs">•</span>
+                <span class="text-gray-500 text-xs">Sep 15, 2024</span>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-3">Governance Proposal: Treasury Diversification</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">SIP-76 proposes diversifying 10% of the DAO treasury from SLND into stSOL to earn staking yields while maintaining Solana ecosystem exposure. The proposal covers risk analysis, expected yield improvement, and the execution plan. Community discussion is open on the governance forum through November 1st.</p>
+              <a href="#" class="inline-block mt-4 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors">Read More →</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-700/50 transition-colors">
+            <div class="bg-gradient-to-br from-cyan-900/30 to-gray-900 h-32 flex items-center justify-center">
+              <span class="text-5xl">🔀</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-purple-400 text-xs font-semibold">Integration</span>
+                <span class="text-gray-600 text-xs">•</span>
+                <span class="text-gray-500 text-xs">Aug 22, 2024</span>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-3">Solend x Jupiter Integration Deep Dive</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Solend's new Jupiter integration enables one-click collateral swaps directly within the Solend dashboard. This post explains the technical implementation, the user experience improvement, and how the integration uses Jupiter's V6 swap API to guarantee best-price execution for all collateral swap transactions.</p>
+              <a href="#" class="inline-block mt-4 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors">Read More →</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-700/50 transition-colors">
+            <div class="bg-gradient-to-br from-red-900/30 to-gray-900 h-32 flex items-center justify-center">
+              <span class="text-5xl">🛡️</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-purple-400 text-xs font-semibold">Security</span>
+                <span class="text-gray-600 text-xs">•</span>
+                <span class="text-gray-500 text-xs">Aug 5, 2024</span>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-3">Risk Management Deep Dive</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">An in-depth look at how Solend manages risk across its lending pools — from oracle security and collateral factor methodology to the liquidation engine and insurance fund. This post walks through the exact parameters used for each major asset and the reasoning behind each risk decision made by the protocol's risk committee.</p>
+              <a href="#" class="inline-block mt-4 text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="bg-gray-900 py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8">Browse by Category</h2>
+        <div class="flex flex-wrap gap-3">
+          <button class="bg-purple-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-purple-600 transition-colors">All Posts</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Protocol Updates</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">DeFi Insights</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Governance</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Security</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Community</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Integrations</button>
+          <button class="bg-gray-800 text-gray-300 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors">Education</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Stay in the Loop</h2>
+        <p class="text-gray-400 mb-8">Subscribe to the Solend newsletter to receive protocol updates, governance notifications, and DeFi market insights delivered directly to your inbox. No spam — only signal.</p>
+        <form class="flex flex-col sm:flex-row gap-3" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" class="flex-1 bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors">
+          <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap">Subscribe</button>
+        </form>
+        <p class="text-gray-600 text-xs mt-4">By subscribing, you agree to receive emails from Solend. Unsubscribe at any time.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

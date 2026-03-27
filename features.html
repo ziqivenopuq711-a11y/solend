@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Features</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Powerful DeFi Primitives</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Solend provides a comprehensive set of DeFi building blocks designed for speed, capital efficiency, and composability. Whether you're a retail user looking to earn yield, a developer building automated strategies, or an institution managing large positions, Solend's feature set meets your needs with the security and reliability required at scale.
+        </p>
+      </div>
+    </section>
+
+    <!-- Lending Pools -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">Core Feature</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Lending Pools &amp; Dynamic APYs</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Users can supply liquidity to Solend's main lending pool to earn dynamic interest rates determined entirely by market utilization. The higher the demand for borrowing a given asset, the higher the supply APY for that asset — creating an automatic yield maximization mechanism that responds to real market conditions in real time.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">The protocol currently supports over 15 assets including SOL, USDC, USDT, ETH (Wormhole), BTC (Wormhole), mSOL, stSOL, BONK, JitoSOL, and more. Interest compounds continuously at the block level, meaning your earnings grow with every slot produced on Solana — approximately every 400 milliseconds. This continuous compounding maximizes yield efficiency compared to daily or weekly compounding structures.</p>
+            <p class="text-gray-400 leading-relaxed">When you supply to Solend, you receive cTokens (collateral tokens) representing your share of the pool. These cTokens can themselves be used as collateral for borrowing, enabling capital-efficient looping strategies for advanced users seeking to maximize yield exposure.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-5">
+              <p class="text-purple-400 font-bold text-2xl mb-1">SOL</p>
+              <p class="text-gray-300 text-sm font-medium">Supply APY</p>
+              <p class="text-white font-bold text-xl mt-2">3.42%</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-5">
+              <p class="text-purple-400 font-bold text-2xl mb-1">USDC</p>
+              <p class="text-gray-300 text-sm font-medium">Supply APY</p>
+              <p class="text-white font-bold text-xl mt-2">6.18%</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-5">
+              <p class="text-purple-400 font-bold text-2xl mb-1">ETH</p>
+              <p class="text-gray-300 text-sm font-medium">Supply APY</p>
+              <p class="text-white font-bold text-xl mt-2">1.97%</p>
+            </div>
+            <div class="bg-gray-950 border border-gray-800 rounded-xl p-5">
+              <p class="text-purple-400 font-bold text-2xl mb-1">BTC</p>
+              <p class="text-gray-300 text-sm font-medium">Supply APY</p>
+              <p class="text-white font-bold text-xl mt-2">0.84%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flash Loans -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 font-mono text-sm order-2 md:order-1">
+            <p class="text-gray-500 mb-2">// Flash loan example (pseudocode)</p>
+            <p class="text-purple-400">const <span class="text-white">flashLoan</span> = <span class="text-yellow-400">await</span> solend</p>
+            <p class="text-white pl-4">.flashBorrow(</p>
+            <p class="text-white pl-8">asset: <span class="text-green-400">"USDC"</span>,</p>
+            <p class="text-white pl-8">amount: <span class="text-blue-400">1_000_000</span>,</p>
+            <p class="text-white pl-4">);</p>
+            <p class="text-gray-500 mt-3 mb-2">// Execute strategy within same tx</p>
+            <p class="text-white"><span class="text-yellow-400">await</span> executeArbitrage(flashLoan);</p>
+            <p class="text-gray-500 mt-3 mb-2">// Repay principal + 0.09% fee</p>
+            <p class="text-white"><span class="text-yellow-400">await</span> flashLoan.repay();</p>
+          </div>
+          <div class="order-1 md:order-2">
+            <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">Advanced Feature</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Flash Loans</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Flash loans are uncollateralized loans that must be borrowed and repaid within a single Solana transaction. If the repayment does not occur, the entire transaction reverts as if it never happened — making flash loans completely risk-free for the protocol. Solend charges a fixed fee of 0.09% on all flash loan amounts, which is distributed to the protocol treasury and liquidity providers.</p>
+            <p class="text-gray-400 leading-relaxed mb-4">Primary use cases include:</p>
+            <ul class="text-gray-400 space-y-2 list-none">
+              <li class="flex items-start gap-2"><span class="text-purple-400 mt-1">▸</span> Arbitrage between DEXes (Jupiter, Orca, Raydium) without upfront capital</li>
+              <li class="flex items-start gap-2"><span class="text-purple-400 mt-1">▸</span> Collateral swaps — replace one collateral type with another atomically</li>
+              <li class="flex items-start gap-2"><span class="text-purple-400 mt-1">▸</span> Self-liquidation to avoid penalty fees from third-party liquidators</li>
+              <li class="flex items-start gap-2"><span class="text-purple-400 mt-1">▸</span> Leverage amplification in a single atomic transaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Isolated Markets -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">Risk Architecture</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-4">Isolated Markets</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend's isolated market architecture allows the protocol to support a wider range of assets while protecting core liquidity providers from long-tail asset risk.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Main Pool</h3>
+            <p class="text-gray-400 leading-relaxed">The main pool supports blue-chip assets like SOL, USDC, ETH, and BTC with the highest liquidity and lowest risk parameters. This pool contains the majority of Solend's TVL and serves as the primary liquidity source for large institutional borrowers and yield farmers seeking the most stable and liquid markets on the protocol.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Isolated Pools</h3>
+            <p class="text-gray-400 leading-relaxed">Long-tail assets with lower liquidity or higher volatility are listed in isolated pools. Each isolated pool has its own debt ceiling, collateral factors, and risk parameters tuned specifically for those assets. Losses in an isolated pool cannot propagate to the main pool, ensuring that a single asset's failure does not threaten the entire protocol's solvency.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Custom Pools</h3>
+            <p class="text-gray-400 leading-relaxed">Protocols and DAOs can request custom isolated pools with bespoke parameters for their specific use case — such as a yield strategy vault that needs to borrow against a specific liquidity provider token. Custom pools enable deep protocol composability while maintaining strict risk isolation boundaries between different market segments and user cohorts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risk Management -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="text-purple-400 font-semibold text-sm uppercase tracking-widest">Protocol Safety</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Risk Management &amp; Liquidations</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Solend's automated liquidation engine is the backbone of protocol solvency. When a borrower's health factor drops below 1.0 — meaning their borrow value exceeds their collateral value times the liquidation threshold — their position becomes eligible for liquidation by any participant in the network.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">Liquidators are economically incentivized through a liquidation bonus, which is a discount on the collateral they receive. For most assets, this bonus is 5%, meaning liquidators can repay 50% of a borrower's outstanding debt and receive collateral worth 105% of what they paid. This creates a competitive market for liquidations that keeps the protocol healthy even during rapid market downturns.</p>
+            <p class="text-gray-400 leading-relaxed">Solend also maintains a protocol-owned insurance fund, built up from a portion of protocol fees, that acts as a backstop in extreme scenarios where liquidations cannot fully cover bad debt. This multi-layer risk management system has maintained full solvency since the protocol's launch in September 2021.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="text-white font-semibold">Health Factor &gt; 1.5</h4>
+                <span class="bg-green-900/40 text-green-400 text-xs font-medium px-3 py-1 rounded-full">Safe</span>
+              </div>
+              <p class="text-gray-400 text-sm">Position is well-collateralized. No risk of liquidation under normal market conditions. Continue monitoring as market prices fluctuate.</p>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="text-white font-semibold">Health Factor 1.0–1.5</h4>
+                <span class="bg-yellow-900/40 text-yellow-400 text-xs font-medium px-3 py-1 rounded-full">Caution</span>
+              </div>
+              <p class="text-gray-400 text-sm">Position approaching liquidation threshold. Consider repaying some debt or adding additional collateral to improve your health factor and buffer against volatility.</p>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="text-white font-semibold">Health Factor &lt; 1.0</h4>
+                <span class="bg-red-900/40 text-red-400 text-xs font-medium px-3 py-1 rounded-full">Liquidatable</span>
+              </div>
+              <p class="text-gray-400 text-sm">Position is undercollateralized. Liquidators can now repay up to 50% of the outstanding debt in exchange for collateral at a 5% discount. Act immediately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
