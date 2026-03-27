@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecosystem — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Ecosystem</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Building the Solana DeFi Ecosystem</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Solend is deeply integrated with the wider Solana ecosystem, partnering with leading protocols across DEX aggregation, liquid staking, automated market making, and oracle infrastructure. Together, we are building a composable, interconnected financial system that rivals — and surpasses — the capabilities of traditional finance at a fraction of the cost and with orders of magnitude more transparency.
+        </p>
+      </div>
+    </section>
+
+    <!-- Partner Protocols -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Partner Protocols</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend works closely with the most important infrastructure projects in the Solana ecosystem to deliver a seamless, composable experience for users and developers alike.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-purple-700/50 transition-colors">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-green-900/40 rounded-xl flex items-center justify-center text-2xl">🔀</div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Jupiter</h3>
+                <p class="text-gray-500 text-sm">DEX Aggregator</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">Jupiter is Solana's leading DEX aggregator, routing trades across all liquidity sources for the best price. Solend integrates with Jupiter to enable one-click collateral swaps — users can swap their collateral type directly within the Solend interface, powered by Jupiter's aggregation to ensure optimal execution at minimal slippage for any asset pair.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-purple-700/50 transition-colors">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-blue-900/40 rounded-xl flex items-center justify-center text-2xl">🌊</div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Marinade Finance</h3>
+                <p class="text-gray-500 text-sm">Liquid Staking</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">Marinade Finance is the leading liquid staking protocol on Solana, issuing mSOL tokens that represent staked SOL earning validator rewards. mSOL is supported as collateral on Solend, allowing users to simultaneously earn Marinade staking yields and use their mSOL to borrow additional assets — stacking yield sources without sacrificing liquidity or exposure.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-purple-700/50 transition-colors">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-cyan-900/40 rounded-xl flex items-center justify-center text-2xl">🐋</div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Orca</h3>
+                <p class="text-gray-500 text-sm">AMM &amp; Liquidity</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">Orca is Solana's most user-friendly AMM, known for its concentrated liquidity Whirlpools feature. Solend references Orca's price feeds as a secondary oracle source for certain assets and collaborates on liquidity strategies that enable users to provide concentrated liquidity on Orca while borrowing against their position on Solend for enhanced capital efficiency.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-purple-700/50 transition-colors">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-yellow-900/40 rounded-xl flex items-center justify-center text-2xl">⚡</div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Raydium</h3>
+                <p class="text-gray-500 text-sm">Concentrated Liquidity</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">Raydium is one of Solana's oldest and most liquid AMMs, offering concentrated liquidity pools and yield farms. Solend collaborates with Raydium on incentive programs that reward users who supply assets to Solend and then deploy their borrowed assets as liquidity in Raydium pools, creating a composable yield loop that benefits both protocols' ecosystems.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-purple-700/50 transition-colors">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-orange-900/40 rounded-xl flex items-center justify-center text-2xl">🔥</div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Jito</h3>
+                <p class="text-gray-500 text-sm">MEV-Optimized Staking</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">Jito is a liquid staking protocol focused on MEV-optimized validator rewards, issuing JitoSOL tokens. JitoSOL earns additional yield from MEV capture compared to standard liquid staking. Solend supports JitoSOL as collateral, enabling users to borrow while their staked SOL compounds both base staking rewards and MEV tips simultaneously.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-purple-700/50 transition-colors">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-purple-900/40 rounded-xl flex items-center justify-center text-2xl">🔮</div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Pyth Network</h3>
+                <p class="text-gray-500 text-sm">Price Oracles</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">Pyth Network is Solend's primary oracle provider, delivering real-time, high-confidence price feeds directly from institutional market participants including Virtu Financial, Jane Street, and Jump Trading. Pyth's on-chain price feeds update every 400ms, enabling Solend to accurately value collateral positions and trigger liquidations with minimal delay during volatile market conditions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Protocol Integrations</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">External protocols use Solend as an underlying infrastructure layer to build more sophisticated financial products and automated strategies for their users.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Yield Strategy Vaults</h3>
+            <p class="text-gray-400 leading-relaxed">Yield aggregators and vault protocols integrate Solend to implement automated lending strategies. For example, a vault might supply user deposits to Solend to earn base interest, then use the cTokens as collateral to borrow more of the same asset and re-supply it — creating a leveraged yield loop that maximizes APY for depositors without requiring manual position management.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Collateral Leverage Loops</h3>
+            <p class="text-gray-400 leading-relaxed">DeFi automation protocols build on Solend's primitives to offer one-click leveraged positions. A user wanting 3x long SOL exposure can supply SOL, borrow USDC, buy more SOL, and repeat — all in a single transaction using Solend's flash loans and Jupiter's swap aggregation. These composable leverage products make sophisticated strategies accessible to non-technical users.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Cross-Protocol Composability</h3>
+            <p class="text-gray-400 leading-relaxed">Solend's open architecture means any Solana program can invoke its lending functions via Cross-Program Invocation (CPI). This enables seamless integration at the smart contract level — a protocol can atomically borrow from Solend, execute a trade on Orca, and repay the loan all in the same transaction, enabling financial products with a level of composability not possible in traditional finance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DeFi Composability -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">DeFi Composability — Money Legos on Solana</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">The concept of "money legos" describes how DeFi protocols can be composed together like building blocks to create new financial products that would be impossible in isolation. Solend is a foundational money lego in the Solana DeFi stack — a lending primitive that other builders can use as a component in their own products.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">Solend's open-source smart contracts are permissionlessly accessible by any program on Solana. The SDK and comprehensive developer documentation make it easy for teams to integrate Solend's lending capabilities in days rather than months. There are no gated API keys, whitelists, or integration fees for on-chain integrations.</p>
+            <p class="text-gray-400 leading-relaxed">This open architecture has already spawned an ecosystem of protocols building on top of Solend — from simple yield optimizers to complex structured products. Every new integration deepens liquidity and strengthens the Solana DeFi ecosystem as a whole.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-6">DeFi Stack Example</h3>
+            <div class="space-y-3">
+              <div class="bg-purple-900/30 border border-purple-700/40 rounded-xl p-4">
+                <p class="text-purple-300 font-semibold text-sm">Layer 4: User Interface</p>
+                <p class="text-gray-400 text-xs mt-1">Yield aggregator dashboard, portfolio tracker, or custom DApp</p>
+              </div>
+              <div class="bg-gray-800 border border-gray-700 rounded-xl p-4">
+                <p class="text-white font-semibold text-sm">Layer 3: Strategy Logic</p>
+                <p class="text-gray-400 text-xs mt-1">Automated leverage loops, yield optimization, risk management</p>
+              </div>
+              <div class="bg-gray-800 border border-gray-700 rounded-xl p-4">
+                <p class="text-white font-semibold text-sm">Layer 2: DeFi Primitives</p>
+                <p class="text-gray-400 text-xs mt-1">Solend (lending) + Jupiter (swaps) + Marinade (staking)</p>
+              </div>
+              <div class="bg-gray-800 border border-gray-700 rounded-xl p-4">
+                <p class="text-white font-semibold text-sm">Layer 1: Blockchain</p>
+                <p class="text-gray-400 text-xs mt-1">Solana — sub-second finality, $0.001 fees, 65K TPS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solana Ecosystem -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Solend's Role in the Growing Solana Ecosystem</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-12">The Solana DeFi ecosystem has experienced tremendous growth since 2021 and continues to expand rapidly. Solend plays a central role as the primary source of on-chain credit — a function essential to any mature financial system.</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+            <p class="text-3xl font-bold text-purple-400 mb-2">$8B+</p>
+            <p class="text-gray-400 text-sm">Solana DeFi TVL</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+            <p class="text-3xl font-bold text-purple-400 mb-2">500+</p>
+            <p class="text-gray-400 text-sm">DeFi Projects on Solana</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+            <p class="text-3xl font-bold text-purple-400 mb-2">1M+</p>
+            <p class="text-gray-400 text-sm">Monthly Active Wallets</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+            <p class="text-3xl font-bold text-purple-400 mb-2">26%</p>
+            <p class="text-gray-400 text-sm">Solend's Share of Solana Lending TVL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

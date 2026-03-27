@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocol Overview — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Protocol Overview</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">What is Solend?</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Solend is an algorithmic, decentralized protocol for lending and borrowing on Solana. It enables anyone, anywhere in the world to earn interest on their digital assets or to borrow against them — without banks, credit checks, or intermediaries. By leveraging Solana's high-speed, low-cost blockchain infrastructure, Solend makes sophisticated DeFi accessible to both retail users and institutions at a fraction of the cost of Ethereum-based alternatives. The protocol is fully on-chain, non-custodial, and governed by its community through the SLND governance token.
+        </p>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">How the Supply &amp; Borrow Mechanism Works</h2>
+          <p class="text-gray-400 text-lg max-w-3xl">Solend operates on a pool-based lending model. Understanding the core mechanics helps users make informed decisions about their positions.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Interest Rate Model</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">Interest rates on Solend are determined algorithmically based on market utilization — the ratio of borrowed assets to total supplied assets in each pool. As utilization increases toward 100%, borrow rates rise sharply to incentivize repayment and encourage new supply. This creates a self-balancing market that ensures liquidity is always available for withdrawals.</p>
+            <p class="text-gray-400 leading-relaxed">The interest rate curve has two distinct slopes: a gradual increase below the optimal utilization ratio (typically 70–80%), and a steep jump above it. This kink in the curve ensures the protocol can respond dynamically to demand surges without manual intervention, maintaining system stability automatically.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-4">Collateral Factors &amp; Liquidation</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">Each asset on Solend has a collateral factor that determines how much can be borrowed against it. For example, SOL may have an 80% collateral factor, meaning $100 of SOL collateral allows up to $80 in borrowing. Stable assets with lower volatility typically receive higher collateral factors, while more volatile assets receive lower ones to protect the protocol.</p>
+            <p class="text-gray-400 leading-relaxed">When a borrower's total borrow value exceeds their collateral value multiplied by the liquidation threshold, their position becomes eligible for liquidation. Liquidators can repay up to 50% of the borrow and receive a liquidation bonus (typically 5%) in collateral. This incentive structure ensures that liquidations happen rapidly, keeping the protocol solvent at all times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Protocol Architecture -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Protocol Architecture</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend's smart contract architecture is designed for security, upgradeability, and composability — enabling both end users and developers to interact with the protocol with confidence.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-purple-400 font-bold text-lg mb-3">Lending Program</h3>
+            <p class="text-gray-400 leading-relaxed">The core Solend program is deployed on Solana mainnet and handles all supply, borrow, repay, and withdraw operations. Written in Rust using the Anchor framework, the program has been audited multiple times by leading security firms. It implements strict access controls, overflow protection, and reentrancy guards at every entry point.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-purple-400 font-bold text-lg mb-3">Isolated Lending Pools</h3>
+            <p class="text-gray-400 leading-relaxed">Solend operates multiple isolated lending pools in addition to the main pool. Each isolated pool has its own risk parameters, supported assets, and debt ceilings. Isolation prevents contagion — a bad debt event in one isolated pool cannot impact the main pool or other isolated pools. This architecture allows the protocol to support higher-risk, long-tail assets safely.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-purple-400 font-bold text-lg mb-3">Oracle System</h3>
+            <p class="text-gray-400 leading-relaxed">Solend uses Pyth Network as its primary price oracle, with Switchboard as a secondary fallback. Pyth provides high-frequency, low-latency price feeds sourced directly from institutional market makers, making it ideal for on-chain DeFi applications. Price staleness checks and circuit breakers protect the protocol from oracle manipulation and flash loan price attacks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Current Protocol Metrics</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Live statistics reflecting the health and scale of the Solend protocol as of Q4 2024. All data is sourced directly from on-chain state.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+            <p class="text-3xl font-bold text-purple-400 mb-1">$2.1B</p>
+            <p class="text-gray-300 text-sm font-medium">Total Value Locked</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+            <p class="text-3xl font-bold text-purple-400 mb-1">$890M</p>
+            <p class="text-gray-300 text-sm font-medium">Active Loans</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+            <p class="text-3xl font-bold text-purple-400 mb-1">20+</p>
+            <p class="text-gray-300 text-sm font-medium">Supported Assets</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+            <p class="text-3xl font-bold text-purple-400 mb-1">15+</p>
+            <p class="text-gray-300 text-sm font-medium">Active Markets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Solana -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Why Solana?</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend was built on Solana from day one. The technical capabilities of the Solana blockchain are uniquely suited to the demands of a high-performance lending protocol used by hundreds of thousands of participants.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <p class="text-4xl font-extrabold text-purple-400 mb-3">&lt;1s</p>
+            <h3 class="text-white font-bold text-lg mb-3">Sub-Second Finality</h3>
+            <p class="text-gray-400 leading-relaxed">Solana achieves transaction finality in under 400 milliseconds — over 100x faster than Ethereum. For a lending protocol, this means liquidations happen faster, reducing risk. Users can adjust positions and react to market movements in near real-time, making Solend practical for active portfolio management strategies that would be cost-prohibitive on slower chains.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <p class="text-4xl font-extrabold text-purple-400 mb-3">$0.001</p>
+            <h3 class="text-white font-bold text-lg mb-3">Near-Zero Transaction Costs</h3>
+            <p class="text-gray-400 leading-relaxed">Average transaction fees on Solana are approximately $0.001, compared to $5–$50+ on Ethereum during peak periods. Low fees make Solend accessible to users of all portfolio sizes — not just whales. Smaller accounts can supply modest amounts and still earn meaningful yields without fee costs eroding their returns. This democratizes access to DeFi primitives for a global user base.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <p class="text-4xl font-extrabold text-purple-400 mb-3">65K TPS</p>
+            <h3 class="text-white font-bold text-lg mb-3">Massive Throughput Capacity</h3>
+            <p class="text-gray-400 leading-relaxed">Solana's theoretical maximum throughput of 65,000 transactions per second ensures the network never becomes congested under normal DeFi activity. For Solend, this means the liquidation engine can process thousands of positions simultaneously during market volatility events — a critical safety feature that protects lenders and the overall protocol from bad debt accumulation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

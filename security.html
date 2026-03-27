@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security — Solend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+  <nav class="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-white font-bold text-xl tracking-tight">
+        <span class="text-purple-500">S</span>olend
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a>
+        <a href="features.html" class="hover:text-purple-400 transition-colors">Features</a>
+        <a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Ecosystem</a>
+        <a href="developers.html" class="hover:text-purple-400 transition-colors">Developers</a>
+        <a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a>
+        <a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a>
+        <a href="security.html" class="hover:text-purple-400 transition-colors">Security</a>
+        <a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a>
+        <a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a>
+        <a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a>
+        <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a>
+      </div>
+      <a href="https://solend.fi/dashboard" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">Launch App</a>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+
+    <!-- Page Hero -->
+    <section class="bg-gray-950 py-20 px-6 border-b border-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-purple-400 font-medium text-sm uppercase tracking-widest mb-4">Security</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Security First</h1>
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+          Protecting user funds is Solend's highest priority. Every architectural decision, parameter choice, and protocol upgrade is evaluated through a security lens first. Solend has undergone four independent security audits by top-tier firms, maintains an active $1,000,000 bug bounty program, and has never lost user funds to a security incident since launching on mainnet in September 2021.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center mt-10">
+          <div class="flex items-center gap-2 text-green-400">
+            <span class="text-2xl">✓</span>
+            <span class="font-semibold">4 Security Audits</span>
+          </div>
+          <div class="flex items-center gap-2 text-green-400">
+            <span class="text-2xl">✓</span>
+            <span class="font-semibold">$0 User Funds Lost</span>
+          </div>
+          <div class="flex items-center gap-2 text-green-400">
+            <span class="text-2xl">✓</span>
+            <span class="font-semibold">$1M Bug Bounty</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audit Reports -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Security Audit Reports</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend has been audited by four of the most respected smart contract security firms in the industry. All audit reports are publicly available, and all identified issues have been fully remediated prior to deployment.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <div class="flex items-start justify-between mb-5">
+              <div>
+                <h3 class="text-white font-bold text-xl">Kudelski Security</h3>
+                <p class="text-gray-500 text-sm mt-1">Q3 2021 — Initial Mainnet Audit</p>
+              </div>
+              <span class="bg-green-900/40 text-green-400 text-xs font-medium px-3 py-1 rounded-full">Passed</span>
+            </div>
+            <p class="text-gray-400 leading-relaxed mb-4">Kudelski Security conducted the first comprehensive audit of Solend's core lending program before the mainnet launch. The audit covered the supply, borrow, repay, withdraw, and liquidation instruction handlers, as well as the account validation logic, arithmetic operations, and access control checks throughout the codebase.</p>
+            <p class="text-gray-400 text-sm">Findings: 0 Critical, 1 High (resolved), 3 Medium (resolved), 5 Low (resolved)</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <div class="flex items-start justify-between mb-5">
+              <div>
+                <h3 class="text-white font-bold text-xl">Neodyme</h3>
+                <p class="text-gray-500 text-sm mt-1">Q1 2022 — Isolated Pools Audit</p>
+              </div>
+              <span class="bg-green-900/40 text-green-400 text-xs font-medium px-3 py-1 rounded-full">Passed</span>
+            </div>
+            <p class="text-gray-400 leading-relaxed mb-4">Neodyme, specialists in Solana smart contract security, audited the isolated lending pool feature additions and the flash loan implementation. Their review focused on cross-pool interaction risks, reentrancy vectors in the flash loan callback mechanism, and the correctness of the utilization-based interest rate computation across multiple concurrent pools.</p>
+            <p class="text-gray-400 text-sm">Findings: 0 Critical, 0 High, 2 Medium (resolved), 4 Low (resolved)</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <div class="flex items-start justify-between mb-5">
+              <div>
+                <h3 class="text-white font-bold text-xl">OtterSec</h3>
+                <p class="text-gray-500 text-sm mt-1">Q2 2023 — Full Protocol Re-audit</p>
+              </div>
+              <span class="bg-green-900/40 text-green-400 text-xs font-medium px-3 py-1 rounded-full">Passed</span>
+            </div>
+            <p class="text-gray-400 leading-relaxed mb-4">OtterSec performed a comprehensive re-audit of the entire Solend protocol including all accumulated code changes since the previous audits. The audit scope included the lending program, governance contracts, oracle integration layer, and the off-chain liquidator reference implementation. OtterSec confirmed the protocol's overall security posture and identified minor improvements.</p>
+            <p class="text-gray-400 text-sm">Findings: 0 Critical, 0 High, 1 Medium (resolved), 3 Low (resolved)</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <div class="flex items-start justify-between mb-5">
+              <div>
+                <h3 class="text-white font-bold text-xl">Trail of Bits</h3>
+                <p class="text-gray-500 text-sm mt-1">Q4 2023 — v2 Architecture Audit</p>
+              </div>
+              <span class="bg-green-900/40 text-green-400 text-xs font-medium px-3 py-1 rounded-full">Passed</span>
+            </div>
+            <p class="text-gray-400 leading-relaxed mb-4">Trail of Bits, one of the most renowned security research firms globally, audited Solend's v2 architecture changes including the upgraded liquidation engine, enhanced oracle safety checks, and new account state management. Their review included both manual code review and automated static analysis using their proprietary tooling, including symbolic execution and fuzzing campaigns on critical functions.</p>
+            <p class="text-gray-400 text-sm">Findings: 0 Critical, 0 High, 2 Medium (resolved), 2 Low (acknowledged)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bug Bounty -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Bug Bounty Program</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Solend operates a public bug bounty program on Immunefi, offering rewards of up to $1,000,000 for the responsible disclosure of critical vulnerabilities. The program covers the core lending smart contracts, governance contracts, and the official frontend application. All security researchers are welcome to participate.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">To be eligible for a bounty, vulnerabilities must be previously unknown, not already reported by another researcher, and disclosed responsibly to the Solend security team before public disclosure. Reports should include a clear proof-of-concept demonstrating the impact and steps to reproduce the vulnerability.</p>
+            <a href="https://immunefi.com/bounty/solend/" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">View on Immunefi</a>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-gray-900 border border-red-900/40 rounded-xl p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h4 class="text-white font-bold text-lg">Critical</h4>
+                <span class="text-red-400 font-bold">$500K – $1,000,000</span>
+              </div>
+              <p class="text-gray-400 text-sm">Direct loss of user funds, unauthorized minting of tokens, permanent freezing of funds, or complete protocol takeover via smart contract exploit.</p>
+            </div>
+            <div class="bg-gray-900 border border-orange-900/40 rounded-xl p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h4 class="text-white font-bold text-lg">High</h4>
+                <span class="text-orange-400 font-bold">$50K – $500K</span>
+              </div>
+              <p class="text-gray-400 text-sm">Temporary freezing of funds, significant theft below critical threshold, governance manipulation, or oracle price manipulation exploits.</p>
+            </div>
+            <div class="bg-gray-900 border border-yellow-900/40 rounded-xl p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h4 class="text-white font-bold text-lg">Medium</h4>
+                <span class="text-yellow-400 font-bold">$5K – $50K</span>
+              </div>
+              <p class="text-gray-400 text-sm">Griefing attacks, smart contract denial of service, incorrect state transitions, or bugs that could lead to minor fund loss under specific conditions.</p>
+            </div>
+            <div class="bg-gray-900 border border-gray-700 rounded-xl p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h4 class="text-white font-bold text-lg">Low</h4>
+                <span class="text-gray-300 font-bold">$1K – $5K</span>
+              </div>
+              <p class="text-gray-400 text-sm">Minor contract bugs, frontend vulnerabilities (XSS, phishing vectors), incorrect event emissions, or minor informational leaks without direct fund risk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risk Framework -->
+    <section class="bg-gray-900 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Risk Management Framework</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Solend employs a multi-layered approach to risk management, combining conservative parameter settings, oracle security, and economic incentive design to protect users under all market conditions.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-purple-400 font-bold text-lg mb-4">Oracle Security</h3>
+            <p class="text-gray-400 leading-relaxed">Pyth Network provides high-frequency price feeds from institutional market makers. Solend implements price staleness checks (reject feeds older than 60 seconds), confidence interval checks (reject feeds with excessive uncertainty), and circuit breakers that pause affected markets if prices move more than 20% in a single slot.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-purple-400 font-bold text-lg mb-4">Liquidation Buffers</h3>
+            <p class="text-gray-400 leading-relaxed">Each asset has conservative collateral factors and liquidation thresholds that create buffer zones between a position's borrow limit and its liquidation point. Liquidators are incentivized with 5% bonuses, ensuring fast liquidations before positions go underwater. The 50% close factor prevents protocol-destabilizing single-liquidation events.</p>
+          </div>
+          <div class="bg-gray-950 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-purple-400 font-bold text-lg mb-4">Borrow Limits &amp; Debt Ceilings</h3>
+            <p class="text-gray-400 leading-relaxed">Every asset has a maximum borrow limit as a percentage of supplied liquidity, and each isolated pool has a global debt ceiling. These caps prevent any single position or pool from accumulating disproportionate risk that could threaten protocol solvency in extreme market scenarios or coordinated attacks against specific assets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insurance Fund -->
+    <section class="bg-gray-950 py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Protocol Insurance Fund</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">Solend maintains a protocol-owned insurance fund denominated in USDC and SOL, designed to backstop losses in extreme market scenarios where the normal liquidation mechanism fails to fully cover bad debt. The insurance fund acts as a final layer of protection for liquidity providers, separate from any individual user's position.</p>
+            <p class="text-gray-400 leading-relaxed mb-6">The fund grows organically through a portion of protocol fee revenue (currently 10% of all interest collected flows to the insurance fund). The fund balance and allocation are visible on-chain and reported in quarterly governance updates. The community can vote to deploy insurance fund resources for emergency recapitalization or other risk-mitigation purposes.</p>
+            <p class="text-gray-400 leading-relaxed">As a last resort, Solend's governance can also vote to use community treasury SLND tokens to recapitalize the protocol through a debt auction mechanism — similar to MakerDAO's emergency shutdown and recapitalization process. This multi-layer backstop system gives users strong confidence in the protocol's long-term solvency.</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
+            <h3 class="text-white font-bold text-xl mb-6">Insurance Fund Status</h3>
+            <div class="space-y-5">
+              <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Current Fund Size</span>
+                <span class="text-green-400 font-bold text-lg">$1,820,000 USDC</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                <span class="text-gray-400">SOL Reserve</span>
+                <span class="text-white font-bold">4,200 SOL</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Monthly Growth Rate</span>
+                <span class="text-white font-bold">~$45,000/month</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                <span class="text-gray-400">% of Protocol Fees Allocated</span>
+                <span class="text-white font-bold">10%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400">Claims History</span>
+                <span class="text-green-400 font-bold">None — 0 incidents</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <h4 class="text-white font-semibold mb-4">Protocol</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="overview.html" class="hover:text-purple-400 transition-colors">Overview</a></li>
+            <li><a href="features.html" class="hover:text-purple-400 transition-colors">Features</a></li>
+            <li><a href="security.html" class="hover:text-purple-400 transition-colors">Security</a></li>
+            <li><a href="roadmap.html" class="hover:text-purple-400 transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Ecosystem</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="ecosystem.html" class="hover:text-purple-400 transition-colors">Partners</a></li>
+            <li><a href="tokenomics.html" class="hover:text-purple-400 transition-colors">Tokenomics</a></li>
+            <li><a href="governance.html" class="hover:text-purple-400 transition-colors">Governance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Developers</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Documentation</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">SDK</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">API Reference</a></li>
+            <li><a href="developers.html" class="hover:text-purple-400 transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="careers.html" class="hover:text-purple-400 transition-colors">Careers</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2024 Solend Protocol. All rights reserved. Built on Solana.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Twitter</a>
+          <a href="https://discord.gg/solend" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Discord</a>
+          <a href="https://t.me/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">Telegram</a>
+          <a href="https://github.com/solendprotocol" target="_blank" class="text-gray-400 hover:text-purple-400 text-sm transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
